@@ -1,0 +1,38 @@
+$blue-color : rgba(1,182,245,1);
+
+@mixin flexJust ($space) {
+  display: flex;
+    justify-content: $space;
+}
+
+.general-style{
+  background: #F5F5F5;
+  padding: 3rem;
+}
+
+.main-back{
+  background: white;
+  border-radius: 20px 20px 0 0;
+  padding: 2rem;
+}
+
+.main-header{
+  @include flexJust(space-between);
+}
+
+.all-todos{
+  background: white;
+}
+
+.header-each-todo{
+  font-size: 1.25rem;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.gray-each-todo{
+  color: gray;
+}
+
+.blue-text{
+  color: $blue-color !important;
+}
